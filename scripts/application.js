@@ -136,10 +136,12 @@ function geolocate() {
 
 function getAutocompleteResults() {
   var place = autocomplete.getPlace();
-  getFarmersMarketsByGeolocation(
-    place.geometry.location.lat(),
-    place.geometry.location.lng()
-  );
+  if (place.geometry) {
+    getFarmersMarketsByGeolocation(
+      place.geometry.location.lat(),
+      place.geometry.location.lng()
+    );
+  }
 }
 
 /*      Farmer Market Detail Search Flow        */
