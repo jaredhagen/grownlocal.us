@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Grown Local</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.66">
+	<link rel="stylesheet" type="text/css" href="./styles/application.css">
+	<link rel="stylesheet" type="text/css" href="./styles/spinner.css">
+	<link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="./scripts/jquery-1.11.0.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+	<script type="text/javascript" src="./scripts/application.js"></script>
+</head>
+
+<body>
+	<header>
+		<hgroup>
+			<h1>Grown Local</h1>
+			<h2>Locate a Farmer's Market Near You</h2>
+		</hgroup>
+	</header>
+	<section>
+		<div id="search-container">
+			<div id="search">
+				<!-- <div id="autolocate">
+					<img src="./images/geolocate-visualpharm.png" alt="Geolocate" height="40" width="40">
+				</div> -->
+				<div id="address">
+					<input id="address-input" type="text" placeholder="Enter an Address, City, or Zip" autofocus />
+				</div>
+				<div id="locate">
+					<img src="./images/search-50.png" alt="Geolocate" height="40" width="40">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<article id="results">
+		</article>
+	</section>
+	<section id="market-details">
+		<article>
+			<div id="details-header">
+				<img id="details-back" src="./images/back-50.png" alt="Back" height="40" width="40">
+				<h2 id="details-name"></h2>
+				<p id="details-distance"></p>
+			</div>
+			<div id="details-body">
+				<div id="details-text">
+					<div id="details-address">
+						<img src="./images/marker-48.png" alt="Address" height="30" width="30">
+						<ul></ul>
+					</div>
+					<div id="details-schedule">
+						<img src="./images/calendar-50.png" alt="Schedule" height="30" width="30">
+						<ul></ul>
+					</div>
+					<div id="details-products">
+						<h3>Products</h3>
+						<ul></ul>
+					</div>
+				</div>
+				<div id="map-canvas"></div>
+			</div>
+		</article>
+	</section>
+	<div class="spinner">
+		<div class="spinner-container container1">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+		</div>
+		<div class="spinner-container container2">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+		</div>
+		<div class="spinner-container container3">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+		</div>
+	</div>
+	<footer>
+		<a href="https://play.google.com/store/apps/details?id=com.jaredhagen.grownlocal">
+			<img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+		</a>
+	</footer>
+</body>
+
+</html>
